@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Fidelity - Careers",
+        "desc": "A 12 page careers website for Fidelity investment group. This project features a custom video player and modular design implementation.",
+        "link": "https://careers.fidelity.ca/en/index/",
+        "img": "./images/fidelity.png"
+        
+        
+    },
+    {
+        "title": "RBC - API",
+        "desc": "A campaign page for RBC's Business API program. This page features a custom code snippet displaying consistently accross devices.",
+        "link": "https://www.rbcroyalbank.com/business/api/index.html",
+        "img": "./images/rbc.png"
+    }
+]

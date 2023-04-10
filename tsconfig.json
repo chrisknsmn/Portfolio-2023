@@ -1,5 +1,11 @@
 {
+    "include": [
+    "src/**/*",
+    "public/**/*",
+    "typings/**/*"
+    ],
     "compilerOptions": {
+      "resolveJsonModule": true,
       "esModuleInterop": true,
       "jsx": "react",
       "module": "esnext",

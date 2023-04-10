@@ -23,7 +23,20 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
-    ]
+      // Add this new rule for handling image files
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+              publicPath: '/',
+            },
+          },
+        ],
+      },
+    ],
   },
   devtool: prod ? undefined : 'source-map',
   plugins: [
