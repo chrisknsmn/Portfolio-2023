@@ -6,13 +6,13 @@ import Github from './icons/github';
 
 const Contact: React.FC = () => {
 
-    return <section id="contact" className='contact mar-t-oct'>
+    return <section id="contact" className='contact'>
         <div className='section-inner'>
             
             <div className='contact-text'>
                 <h2>Contact</h2>
                 <p className='body-text'>
-                    I am interested in freelance opportunities.<br/> View my Resume for more information about my work experience. If you have any questions don't hesitate to contact me.
+                    View my <a href="./pdf/kinsman_resume.pdf" target='_blank' className='link'>Resume</a> for more information about my work experience. If you have any questions don't hesitate to contact me.
                 </p>
             </div>
             <div className='mar-tb-dbl'>

@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
             <div className='grid-wpr skill-card-cont'>
                 {skills.map((skill, index) => (
                     <div className='grid-one-fourth' key={index}>
-                        <div className='skill-card'>
+                        <div className='skill-card' key={index}>
                             <h3>
                                 {skill.title}    
                             </h3>

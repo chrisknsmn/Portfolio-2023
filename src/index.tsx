@@ -1,6 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import './main.js'
 
 import Header from './header';
 import Banner from './banner';
@@ -22,7 +23,7 @@ root.render(
         <About />
         <Skills />
         <Featured />
-        {/* <Work /> */}
+        <Work />
         <Contact />
         <Footer />
     </div>

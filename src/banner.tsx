@@ -2,14 +2,30 @@ import React from 'react';
 import './index.css'
 
 const Banner: React.FC = () => {
-    return <section>
+
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+
+        const target = event.currentTarget.getAttribute("href");
+        const section = target ? document.querySelector(target) : null;
+        const height = section as HTMLElement;
+        console.log(height.offsetTop);
+        if (section) {
+          window.scrollTo({
+            top: height.offsetTop - 80,
+            behavior: "smooth",
+          });
+        }
+    };
+
+    return <section id='home'>
         <div className='section-inner'>
-            <h1>Christopher Kinsmsn</h1>
+            <h1 className='pad-t'>Christopher Kinsmsn</h1>
             <p className='banner-text'>
-                Developing <a href="#" className='bold'>dynamic</a> and <a href="#" className='bold'>accessible</a> experiences for the web.
+                Developing <a href="#featured-card-0" className='bold' onClick={handleClick}>dynamic</a> and <a href="#featured-card-1" className='bold' onClick={handleClick}>accessible</a> experiences for the web.
             </p>
             <div className='flex'>
-                <a href="#contact" className='btn'>Connect</a>
+                <a href="#contact" className='btn' onClick={handleClick}>Connect</a>
             </div>
             
         </div>

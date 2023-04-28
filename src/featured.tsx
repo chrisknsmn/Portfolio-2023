@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import data from "./json/data.json"
+import data from "./json/featured.json"
 
 const Featured: React.FC = () => {
 
@@ -12,22 +12,13 @@ const Featured: React.FC = () => {
 
     const website: Website[] = data;
 
-    // const processedPeople = website.map((website: Website) => {
-    // // Perform any desired operations or transformations on the data
-    // return {
-    //     ...website,
-    //     title: website.title + 1, // Increment age by 1 as an example
-    // };
-    // });
-
     return <section className='mar-t-oct'>
         <div className='section-inner'>
-            <h2>Work</h2>
+            <h2 id="work">Work</h2>
             <h3 className='h3'>Featured projects</h3>
             <div className='featured-cards'>
                 {website.map((data,index) => (
-                    <div className='featured-card' key={index}>
-
+                    <div id={`featured-card-${index}`} className='featured-card' key={index}>
                         <div className='grid-wpr'>
                             <div className='grid-half mobile-only'>
                                 <div className='featured-img-cont' style={{ backgroundImage: `url(${data.img})` }}></div>

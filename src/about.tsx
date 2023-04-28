@@ -4,10 +4,25 @@ const About: React.FC = () => {
 
     const profileImageSrc = "./images/profile.png";
 
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+
+        const target = event.currentTarget.getAttribute("href");
+        const section = target ? document.querySelector(target) : null;
+        const height = section as HTMLElement;
+        console.log(height.offsetTop);
+        if (section) {
+          window.scrollTo({
+            top: height.offsetTop - 80,
+            behavior: "smooth",
+          });
+        }
+    };
+
     return <section id="about" className='mar-t-oct'>
         <div className='section-inner'>
 
-            <h2>About</h2>
+            <h2 className='mar-t-quad'>About</h2>
             <div className='grid-wpr'>
 
                 <div className='grid-half mobile-only'>
@@ -18,13 +33,13 @@ const About: React.FC = () => {
 
                 <div className='grid-half'>
                     <p className='body-text pad-r'>
-                        I am a web developer based in Toronto Canada, specializing in front end web development. Currently building web applications at Interad.
+                        I am a web developer based in Toronto Canada, specializing in front end web development. Currently building web applications at <a href="https://www.interadcorp.com/" target='_blank' className='link'>Interad</a>.
                     </p>
                     <p className='mar-t-dbl'>
-                        <a href="#" className='external-link'>Work</a>
+                        <a href="#work" className='external-link' onClick={handleClick}>Work</a>
                     </p>
                     <p>
-                        <a href="https://github.com/chrisknsmn" className='external-link'>Github</a>
+                        <a href="https://github.com/chrisknsmn" className='external-link' target='_blank'>Github</a>
                     </p>
                 </div>
 

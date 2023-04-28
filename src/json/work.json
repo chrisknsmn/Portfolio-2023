@@ -1,16 +1,26 @@
 [
     {
-        "title": "Fidelity - Careers",
-        "desc": "A 12 page careers website for Fidelity investment group. This project features a custom video player and modular design implementation.",
-        "link": "https://careers.fidelity.ca/en/index/",
-        "img": "./images/fidelity.png"
-        
-        
+        "title": "Speedle",
+        "desc": "Timed word game using Ract and Typescript.",
+        "link": "https://speedle.ca/",
+        "git": "https://github.com/chrisknsmn/Speedle"
     },
     {
-        "title": "RBC - API",
-        "desc": "A campaign page for RBC's Business API program. This page features a custom code snippet displaying consistently accross devices.",
-        "link": "https://www.rbcroyalbank.com/business/api/index.html",
-        "img": "./images/rbc.png"
+        "title": "Savings calculator - Fidelity",
+        "desc": "Fidelity web tool calculating savings goals.",
+        "link": "https://www.fidelity.ca/en/savingscalculator/",
+        "git": ""
+    },
+    {
+        "title": "Avion Rewards - Avion",
+        "desc": "Avion promotional website detailing rewards.",
+        "link": "https://www.avionrewards.com/index.html",
+        "git": ""
+    },
+    {
+        "title": "Climate Hub - RBC",
+        "desc": "RBC's dynamically updating climate campaign webpages.",
+        "link": "https://www.rbc.com/community-social-impact/climate/",
+        "git": ""
     }
 ]
