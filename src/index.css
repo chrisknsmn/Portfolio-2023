@@ -30,6 +30,9 @@ body {
 .mar-t {
     margin-top: var(--gap) !important;
 }
+.mar-b {
+    margin-bottom: var(--gap) !important;
+}
 .mar-r {
     margin-right: var(--gap) !important;
 }
