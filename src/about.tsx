@@ -27,13 +27,13 @@ const About: React.FC = () => {
 
                 <div className='grid-half mobile-only'>
                     <div className='profile-card mar-b-dbl'>
-                        <img src={profileImageSrc} />
+                        <img src={profileImageSrc} alt="Profile image" />
                     </div>
                 </div>
 
                 <div className='grid-half'>
                     <p className='body-text pad-r'>
-                        I am a web developer based in Toronto Canada, specializing in front end web development. Currently building web applications at <a href="https://www.interadcorp.com/" target='_blank' className='link'>Interad</a>.
+                        I am a web developer, specializing in front end web development. Currently building web applications at <a href="https://www.interadcorp.com/" target='_blank' className='link'>Interad</a>.
                     </p>
                     <p className='mar-t-dbl'>
                         <a href="#work" className='external-link' onClick={handleClick}>Work</a>
@@ -45,7 +45,7 @@ const About: React.FC = () => {
 
                 <div className='grid-half desktop-only'>
                     <div className='profile-card'>
-                        <img src={profileImageSrc} />
+                        <img src={profileImageSrc} alt="Profile image" />
                     </div>
                 </div>
 

@@ -5,6 +5,10 @@ import Linkedin from './icons/linkedin';
 import Github from './icons/github';
 import Figma from './icons/figma';
 
+import Mail from './icons/mail';
+import Stack from './icons/stack';
+import Insta from './icons/insta';
+
 const Contact: React.FC = () => {
 
     return <section id="contact" className='contact'>
@@ -28,13 +32,28 @@ const Contact: React.FC = () => {
                     <span>Chrisknsmn</span>
                 </a>
 
+                <a href="https://stackoverflow.com/users/20283806/c-kinsman" className="contact-link mar-t" target='_blank'>
+                    <Stack />
+                    <span>Chrisknsmn</span>
+                </a>
+
                 <a href="https://www.figma.com/@chrisknsmn" className="contact-link mar-t" target='_blank'>
                     <Figma />
                     <span>Chrisknsmn</span>
                 </a>
 
+                {/* <a href="https://www.instagram.com/chrisknsmn/" className="contact-link mar-t" target='_blank'>
+                    <Insta />
+                    <span>Chrisknsmn</span>
+                </a> */}
+
+                {/* <a href="https://www.figma.com/@chrisknsmn" className="contact-link mar-t" target='_blank'>
+                    <Mail />
+                    <span>Chrisknsmn</span>
+                </a> */}
+
             </div>
-            
+
         </div>
     </section>;
 };

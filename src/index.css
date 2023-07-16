@@ -10,9 +10,12 @@
     --black: #2B2B2B;
     --white: #fafafa;
 
-    --prm: #598372;
+    --prm: #608e7a;
     --sec: #003E52;
     --trt: #AF3A03;
+
+    --btn: #003E52;
+    --hov: #608e7a;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -188,7 +191,7 @@ h2 {
     content: "> ";
 }
 .external-link:hover {
-    color: var(--prm);
+    color: var(--hov);
 }
 
 .link {
@@ -200,7 +203,7 @@ h2 {
     text-decoration: none;
 }
 .link:hover {
-    color: var(--sec);
+    color: var(--hov);
 }
 
 /* BUTTONS */
@@ -209,8 +212,8 @@ h2 {
     padding-left: var(--gap-dbl);
     padding-right: var(--gap-dbl);
     border-radius: 5px;
-    background-color: var(--sec);
-    color: var(--white);
+    background-color: var(--btn);
+    color: #fafafa;
     font-size: 1.8rem;
     font-weight: 400;
     -webkit-transition: .2s ease-in-out;
@@ -220,7 +223,7 @@ h2 {
 
 }
 .btn:hover {
-    background-color: var(--prm);
+    background-color: var(--hov);
 }
 @media only screen and (max-width: 640px) {
     .btn {
@@ -240,7 +243,7 @@ h2 {
     text-decoration: none;
 }
 .bold:hover {
-    color: var(--sec);
+    color: var(--hov);
 }
 
 /* HEADER */
@@ -251,7 +254,7 @@ header {
     max-width: 100%;
     height: auto;
     padding: var(--gap);
-    background-color: var(--black);
+    background-color: #2B2B2B;
 
     position: sticky;
     top: 0;
@@ -272,7 +275,7 @@ header {
 }
 .header-links-desktop a {
     padding: var(--gap);
-    color: var(--white);
+    color: #fafafa;
     text-decoration: none;
     font-weight: 200;
     font-size: 1.4rem;
@@ -280,7 +283,7 @@ header {
     transition: .5s;
 }
 .header-links-desktop a:hover {
-    color: var(--prm);
+    color: var(--hov);
 }
 .header-icon-mob {
     display: none;
@@ -296,7 +299,7 @@ header {
 
     }
     .header-icon-mob svg {
-        fill: var(--white);
+        fill: #fafafa;
         height: 100%;
         transition: 0.5s;
     }
@@ -316,7 +319,6 @@ header {
     padding-right: 5px;
 }
 .header-logo:hover {
-    /* transform: rotate(360deg); */
     cursor: pointer;
 }
 .header-logo img {
@@ -335,7 +337,7 @@ header {
     position: relative;
 }
 .dropdown-menu button {
-    background-color: var(--black);
+    background-color: #2B2B2B;
     border: none;
 }
 .dropdown-btn {
@@ -349,8 +351,8 @@ header {
     height: 0;
     overflow: hidden;
     transition: height .5s ease-out;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #2B2B2B;
+    color: #fafafa;
     margin-top: 15px;
     margin-left: -15px;
     width: 100vw;
@@ -364,7 +366,7 @@ header {
     padding: var(--gap);
 }
 .dropdown-menu ul li a {
-    color: var(--white);
+    color: #fafafa;
     text-decoration: none;
     transition: .5s;
 }
@@ -527,13 +529,13 @@ h1 {
     width: 32px;
 }
 .contact-link:hover {
-    color: var(--prm);
+    color: var(--hov);
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #2B2B2B;
+    color: #fafafa;
 }
 
 /* carousel */
@@ -585,7 +587,7 @@ footer {
 }
 .carousel-buttons button:hover {
     cursor: pointer;
-    color: var(--prm);
+    color: var(--hov);
 }
 
 @media only screen and (max-width: 640px) {

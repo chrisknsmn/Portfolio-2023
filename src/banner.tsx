@@ -22,7 +22,7 @@ const Banner: React.FC = () => {
         <div className='section-inner'>
             <h1 className='pad-t'>Christopher Kinsmsn</h1>
             <p className='banner-text'>
-                Developing <a href="#featured-card-0" className='bold' onClick={handleClick}>dynamic</a> and <a href="#featured-card-1" className='bold' onClick={handleClick}>accessible</a> experiences for the web.
+                Developing <a href="#featured-card-0" className='bold' onClick={handleClick}>dynamic</a> and <a href="#featured-card-1" className='bold' onClick={handleClick}>optimized</a> experiences for the web.
             </p>
             <div className='flex'>
                 <a href="#contact" className='btn' onClick={handleClick}>Connect</a>

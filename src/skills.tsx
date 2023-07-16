@@ -2,8 +2,8 @@ import React from 'react';
 
 const Skills: React.FC = () => {
     const skills = [
-        { title: 'Home', value: ['Javascript','Typescript','HTML','CSS'] },
-        { title: 'Frameworks', value: ['Node.js','React','Vue','jQuery'] },
+        { title: 'Languages', value: ['HTML','CSS','Javascript','PHP'] },
+        { title: 'Frameworks', value: ['Node.js','React','Angular','Vue'] },
         { title: 'Tools', value: ['Git','Docker','Wordpress'] },
         { title: 'Design', value: ['Adobe','Figma','Sketch'] },
     ];
