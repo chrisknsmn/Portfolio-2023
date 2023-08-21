@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
 
     return <section id='home'>
         <div className='section-inner'>
-            <h1 className='pad-t'>Christopher Kinsmsn</h1>
+            <h1 className='pad-t'>Christopher Kinsman</h1>
             <p className='banner-text'>
                 Developing <a href="#featured-card-0" className='bold' onClick={handleClick}>dynamic</a> and <a href="#featured-card-1" className='bold' onClick={handleClick}>optimized</a> experiences for the web.
             </p>
